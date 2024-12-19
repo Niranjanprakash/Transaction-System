@@ -1,0 +1,166 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.App {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 28px;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form select,
+form button {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  background-color: #f9f9f9;
+}
+
+form select {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+form button {
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+form button:hover {
+  background-color: #357ab7;
+}
+
+h2 {
+  font-size: 22px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+  font-size: 16px;
+}
+
+li span:last-child {
+  font-weight: bold;
+  color: green;
+}
+
+li span.expense {
+  color: red;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d9534f;
+}
+
+.balance {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.balance span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+  }
+
+  form input,
+  form select,
+  form button {
+    font-size: 14px;
+  }
+
+  li span {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .balance {
+    font-size: 16px;
+  }
+}
